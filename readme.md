@@ -1,1 +1,1 @@
-This is the weather map
+This is the weather app
