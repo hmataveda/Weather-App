@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./weather.css">
+    </head>
+
+    <body>
+        <nav>
+            <h1>Weather Channel</h1>
+            <ul>
+                <li onclick="giveAlert()" giveAlert()><a href="#">Alexandria</a></li>
+                <li onclick="giveAlert()"><a href="#">Orlando</a></li>
+                <li onclick="giveAlert()"><a href="#">Dallas</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="heading">
+                <h2>Alexandria</h2>
+                <div>
+                    show temp in
+                    <select name="tempIn" id="temp" onchange="tempChange(this)">
+                        <option value="cel"> &#8451;</option>
+                        <option value="fahrenit">&#8457;</option>
+                    </select>
+                </div>
+            </div>
+
+            <section class="boxes">
+                <div class="box">
+                    <h3>Today</h3>
+                    <p><img src="./assets/some_rain.png" alt=""></p>
+                    <p>some rain</p>
+                    <p class="display"><span class="morning">25</span><span class="night">14</span></p>
+                </div>
+                <div class="box">
+                    <h3>Tomorrow</h3>
+                    <p><img src="./assets/some_sun.png" alt=""></p>
+                    <p>some rain</p>
+                    <p class="display"><span class="morning">21</span><span class="night">4</span></p>
+                </div>
+                <div class="box">
+                    <h3>Friday</h3>
+                    <p><img src="./assets/some_clouds.png" alt=""></p>
+                    <p>some rain</p>
+                    <p class="display"><span class="morning">17</span><span class="night">5</span></p>
+                </div>
+                <div class="box">
+                    <h3>Saturday</h3>
+                    <p><img src="./assets/some_sun.png" alt=""></p>
+                    <p>some rain</p>
+                    <p class="display"><span class="morning">22</span><span class="night">3</span></p>
+                </div>
+            </section>
+        </main>
+        <footer class="cookie">
+            <div><img src="./assets/cookie.png" alt="cookie"></div>
+            <div class="content">
+                <h2>Stop! Cookie time</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Nostrum, cumque? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Non, incidunt?
+                    Lorem ipsum dolor sit amet <a href="#">Read More....</a> </p>
+            </div>
+            <p><button onclick="hideCookie()">I accept</button></p>
+        </footer>
+
+        <script src="./weather.js"></script>
+    </body>
+
+</html>
